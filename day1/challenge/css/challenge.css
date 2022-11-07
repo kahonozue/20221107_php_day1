@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.titileBlock {
+    height: 65px;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: #ffff;
+    margin-left: 10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* table */
+.tableBlock {
+    height: calc(100vh - 65px);
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.table {
+    width: 80%;
+}
+
+.table > thead, .table > tbody > tr {
+    height: 55px;
+}
+
+.table > thead {
+    font-weight: bold;
+}
