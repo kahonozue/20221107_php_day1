@@ -12,7 +12,7 @@ $associative_array = array(
     "cartoon" => "MickeyMouse",
     "anime" => "Doraemon",
     "game" => "Mario"
-);  
+);
 
 // echo "<p class='subtitle'>associative array</p>";
 // "echo" doesn't necessary below cuz it means I'm doing "print_r" twice.
@@ -74,6 +74,7 @@ $multidimensional_array = array(
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -81,28 +82,48 @@ $multidimensional_array = array(
     <link rel="stylesheet" href="css/advanced.css">
     <title>advanced</title>
 </head>
+
 <body>
     <div class="contentBlock">
         <div class="characterBlock">
             <div>
-                <?= $associative_array["cartoon"] ?>
+                <div class="characterName"><?= $associative_array["cartoon"] ?></div>
                 <img src="mickey_mouse.jpg" arc="micky mouse">
+                <div>
+                    <p class="personality">Personalities</p>
+                    <div><?= $multidimensional_array['Mickey_Mouse']["personality_one"] ?></div>
+                    <div><?= $multidimensional_array['Mickey_Mouse']["personality_two"] ?></div>
+                    <div><?= $multidimensional_array['Mickey_Mouse']["personality_three"] ?></div>
+                </div>
             </div>
         </div>
         <div class="characterBlock">
             <div>
-                <?= $associative_array["anime"] ?>
+                <div class="characterName"><?= $associative_array["anime"] ?></div>
                 <img src="Doraemon.png" arc="doraemon">
+                <div>
+                    <p class="personality">Personalities</p>
+                    <div><?= $multidimensional_array['Doraemon']["personality_one"] ?></div>
+                    <div><?= $multidimensional_array['Doraemon']["personality_two"] ?></div>
+                    <div><?= $multidimensional_array['Doraemon']["personality_three"] ?></div>
+                </div>
             </div>
         </div>
         <div class="characterBlock">
             <div>
-                    <?= $associative_array["game"] ?>
-            <img src="mario.jpg" arc="mario">
+                <div class="characterName"><?= $associative_array["game"] ?></div>
+                <img src="mario.jpg" arc="mario">
+                <div>
+                    <p class="personality">Personalities</p>
+                    <div><?= $multidimensional_array['Mario']["personality_one"] ?></div>
+                    <div><?= $multidimensional_array['Mario']["personality_two"] ?></div>
+                    <div><?= $multidimensional_array['Mario']["personality_three"] ?></div>
+                </div>
             </div>
         </div>
     </div>
 
-    
+
 </body>
+
 </html>

@@ -17,6 +17,26 @@ body {
     border: solid 2px #070707;
 }
 
+.characterName {
+    height: 42px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .characterBlock > div > img {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.personality {
+    width: 90%;
+    font-weight: bold;
+    border-bottom: solid 2px #ffff;
+    margin-left: auto;
+    margin-right: auto;
 }
